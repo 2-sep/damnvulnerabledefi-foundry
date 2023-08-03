@@ -72,9 +72,12 @@ contract PuppetV2Test is Test{
         assertEq(pool.calculateDepositOfWETHRequired(POOL_INITIAL_TOKEN_BALANCE), 300_000e18);
     }
 
-    function testExploit() public {
+    // function testExploit() public {
+    //     /*Code your solution here*/
 
-    }
+
+    //     validation();
+    // }
 
     function validation() internal {
         assertEq(token.balanceOf(pool), 0);
