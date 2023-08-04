@@ -2,10 +2,10 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "./Util.sol";
-import {UnstoppableVault} from "../src/unstoppable/UnstoppableVault.sol";
-import {ReceiverUnstoppable} from "../src/unstoppable/ReceiverUnstoppable.sol";
-import {DamnValuableToken} from "../src/DamnValuableToken.sol";
+import "../Util.sol";
+import {UnstoppableVault} from "../../src/unstoppable/UnstoppableVault.sol";
+import {ReceiverUnstoppable} from "../../src/unstoppable/ReceiverUnstoppable.sol";
+import {DamnValuableToken} from "../../src/DamnValuableToken.sol";
 import {ERC20} from "solmate/mixins/ERC4626.sol";
 
 contract UnstoppableTest is Test {
@@ -24,7 +24,7 @@ contract UnstoppableTest is Test {
     // 声明地址变量
     address payable internal deployer;
     address payable internal player;
-    address payable internal someUser;
+    address payable internal recovery;
 
     function setUp() public {
         // create user address 实例化
