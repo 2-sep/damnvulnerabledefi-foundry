@@ -72,7 +72,7 @@ contract AbiSmugglingTest is Test{
       /**
        * EXPLOIT START *
        */
-      vault.execute()
+      vault.execute();
       /**
        * EXPLOIT END *
        */
