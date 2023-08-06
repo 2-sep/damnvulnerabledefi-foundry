@@ -83,15 +83,3 @@ import: ISimpleGovernance.sol 治理代币合约
 砸盘代币，去借贷池借钱
 
 扩展：erc20-permit
-
-**9_Puppet V2**
-
-目标：
-
-思路：
-
-**10_Free Rider**
-
-目标：
-
-思路：
